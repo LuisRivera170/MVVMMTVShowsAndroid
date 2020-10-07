@@ -9,3 +9,5 @@ Android app for practice components like
 * Material Design 
 * Data binding 
 * and more. 
+
+using TV Shows API.
