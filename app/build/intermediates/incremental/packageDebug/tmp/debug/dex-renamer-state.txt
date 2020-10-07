@@ -1,4 +1,4 @@
-#Wed Oct 07 12:53:21 CDT 2020
+#Wed Oct 07 18:07:26 CDT 2020
 base.0=/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
