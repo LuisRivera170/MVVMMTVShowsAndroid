@@ -2,5 +2,9 @@
     {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_container_tv_show.xml",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/item_container_tv_show.xml"
     }
 ]

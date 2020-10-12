@@ -19,6 +19,9 @@ data class TVShow(
     @SerializedName("network")
     val network: String,
 
+    @SerializedName("status")
+    val status: String,
+
     @SerializedName("image_thumbnail_path")
     val thumbnail: String,
 

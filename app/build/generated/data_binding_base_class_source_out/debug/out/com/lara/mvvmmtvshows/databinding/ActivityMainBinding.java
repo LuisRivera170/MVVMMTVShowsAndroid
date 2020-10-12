@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import com.lara.mvvmmtvshows.R;
 import java.lang.Deprecated;
 import java.lang.Object;
@@ -25,15 +26,23 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
   public final LinearLayout layoutHeader;
 
+  @NonNull
+  public final RecyclerView tvShowRecyclerView;
+
   @Bindable
   protected Boolean mIsLoading;
 
+  @Bindable
+  protected Boolean mIsLoadingMore;
+
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView imageSearch, ImageView imageWatchlist, LinearLayout layoutHeader) {
+      ImageView imageSearch, ImageView imageWatchlist, LinearLayout layoutHeader,
+      RecyclerView tvShowRecyclerView) {
     super(_bindingComponent, _root, _localFieldCount);
     this.imageSearch = imageSearch;
     this.imageWatchlist = imageWatchlist;
     this.layoutHeader = layoutHeader;
+    this.tvShowRecyclerView = tvShowRecyclerView;
   }
 
   public abstract void setIsLoading(@Nullable Boolean isLoading);
@@ -41,6 +50,13 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   @Nullable
   public Boolean getIsLoading() {
     return mIsLoading;
+  }
+
+  public abstract void setIsLoadingMore(@Nullable Boolean isLoadingMore);
+
+  @Nullable
+  public Boolean getIsLoadingMore() {
+    return mIsLoadingMore;
   }
 
   @NonNull
