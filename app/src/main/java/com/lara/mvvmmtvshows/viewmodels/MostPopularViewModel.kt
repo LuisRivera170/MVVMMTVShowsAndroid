@@ -7,7 +7,7 @@ import com.lara.mvvmmtvshows.responses.TVShowResponse
 
 class MostPopularViewModel: ViewModel() {
 
-    private var mostPopularTVShowsRepository: MostPopularTVShowsRepository = MostPopularTVShowsRepository()
+    private val mostPopularTVShowsRepository: MostPopularTVShowsRepository = MostPopularTVShowsRepository()
 
     fun getMostPopularShows(page: Int): LiveData<TVShowResponse> {
         return mostPopularTVShowsRepository.getMostPopularTVShows(page)

@@ -1,5 +1,6 @@
 package com.lara.mvvmmtvshows.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -8,28 +9,29 @@ import androidx.recyclerview.widget.RecyclerView
 import com.lara.mvvmmtvshows.R
 import com.lara.mvvmmtvshows.adapters.TVShowsAdapter
 import com.lara.mvvmmtvshows.databinding.ActivityMainBinding
+import com.lara.mvvmmtvshows.listeners.TvShowsListener
 import com.lara.mvvmmtvshows.models.TVShow
 import com.lara.mvvmmtvshows.viewmodels.MostPopularViewModel
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity(), TvShowsListener {
 
-    private lateinit var viewModel: MostPopularViewModel
+    private lateinit var mostPopularViewModel: MostPopularViewModel
     private lateinit var activityMainBinding: ActivityMainBinding
     private val tvShows = mutableListOf<TVShow>()
     private lateinit var tvShowsAdapter: TVShowsAdapter
     private var currentPage: Int = 1
-    private var totalAvailablePages= 1
+    private var totalAvailablePages = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        tvShowsAdapter = TVShowsAdapter(tvShows)
+        tvShowsAdapter = TVShowsAdapter(tvShows, this)
         doInitialization()
     }
 
     private fun doInitialization() {
         activityMainBinding.tvShowRecyclerView.setHasFixedSize(true)
-        viewModel = ViewModelProvider(this).get(MostPopularViewModel::class.java)
+        mostPopularViewModel = ViewModelProvider(this).get(MostPopularViewModel::class.java)
         activityMainBinding.tvShowRecyclerView.adapter = tvShowsAdapter
         activityMainBinding.tvShowRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 
@@ -37,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 super.onScrolled(recyclerView, dx, dy)
                 if (!activityMainBinding.tvShowRecyclerView.canScrollVertically(1)) {
                     if (currentPage <= totalAvailablePages) {
-                        currentPage ++;
+                        currentPage ++
                         getMostPopularTvShows()
                     }
                 }
@@ -48,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getMostPopularTvShows() {
         toggleLoading()
-        viewModel.getMostPopularShows(currentPage).observe(this, { mostPopularTVShowsResponse ->
+        mostPopularViewModel.getMostPopularShows(currentPage).observe(this, { mostPopularTVShowsResponse ->
             toggleLoading()
             mostPopularTVShowsResponse.let { tvShowsResponse ->
                 totalAvailablePages = tvShowsResponse.totalPages
@@ -67,6 +69,12 @@ class MainActivity : AppCompatActivity() {
         } else {
             activityMainBinding.isLoadingMore = !(activityMainBinding.isLoadingMore != null && activityMainBinding.isLoadingMore == true)
         }
+    }
+
+    override fun onTvShowClicked(tvShow: TVShow) {
+        val intent = Intent(this, TvShowDetailsActivity::class.java)
+        intent.putExtra("tvShow", tvShow)
+        startActivity(intent)
     }
 
 }

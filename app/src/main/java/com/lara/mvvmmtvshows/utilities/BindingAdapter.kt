@@ -21,8 +21,6 @@ fun setImageUrl(imageView: ImageView, URL: String) {
                     .setDuration(300)
                     .alpha(1f)
                     .start()
-
-
             }
 
             override fun onError(e: Exception?) {}

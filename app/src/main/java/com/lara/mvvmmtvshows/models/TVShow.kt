@@ -1,7 +1,10 @@
 package com.lara.mvvmmtvshows.models
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class TVShow(
 
     @SerializedName("id")
@@ -25,4 +28,4 @@ data class TVShow(
     @SerializedName("image_thumbnail_path")
     val thumbnail: String,
 
-)
+): Parcelable

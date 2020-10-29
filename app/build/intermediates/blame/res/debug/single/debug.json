@@ -44,6 +44,10 @@
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/drawable/background_tv_show.xml"
     },
     {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/layout_activity_tv_show_details.xml.flat",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/activity_tv_show_details.xml"
+    },
+    {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_watchlist.png.flat",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_watchlist.png"
     },

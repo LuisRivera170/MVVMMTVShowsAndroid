@@ -6,9 +6,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.lara.mvvmmtvshows.R
 import com.lara.mvvmmtvshows.databinding.ItemContainerTvShowBinding
+import com.lara.mvvmmtvshows.listeners.TvShowsListener
 import com.lara.mvvmmtvshows.models.TVShow
 
-class TVShowsAdapter(private val tvShows: List<TVShow>): RecyclerView.Adapter<TVShowsAdapter.TVShowsViewHolder>() {
+class TVShowsAdapter(private val tvShows: List<TVShow>, private val tvShowsListener: TvShowsListener): RecyclerView.Adapter<TVShowsAdapter.TVShowsViewHolder>() {
 
     private lateinit var layoutInflater: LayoutInflater
 
@@ -17,7 +18,7 @@ class TVShowsAdapter(private val tvShows: List<TVShow>): RecyclerView.Adapter<TV
             layoutInflater = LayoutInflater.from(parent.context)
         }
         val itemShowBinding: ItemContainerTvShowBinding = DataBindingUtil.inflate(layoutInflater, R.layout.item_container_tv_show, parent,false)
-        return TVShowsViewHolder(itemShowBinding)
+        return TVShowsViewHolder(itemShowBinding, tvShowsListener)
     }
 
     override fun onBindViewHolder(holder: TVShowsViewHolder, position: Int) {
@@ -26,11 +27,14 @@ class TVShowsAdapter(private val tvShows: List<TVShow>): RecyclerView.Adapter<TV
 
     override fun getItemCount() = tvShows.size
 
-    class TVShowsViewHolder(private val itemContainerTvShowBinding: ItemContainerTvShowBinding): RecyclerView.ViewHolder(itemContainerTvShowBinding.root) {
+    class TVShowsViewHolder(private val itemContainerTvShowBinding: ItemContainerTvShowBinding, private val tvShowsListener: TvShowsListener): RecyclerView.ViewHolder(itemContainerTvShowBinding.root) {
 
         fun bindTVShow(tvShow: TVShow) {
             itemContainerTvShowBinding.tvShow = tvShow
             itemContainerTvShowBinding.executePendingBindings()
+            itemContainerTvShowBinding.root.setOnClickListener {
+                tvShowsListener.onTvShowClicked(tvShow)
+            }
         }
 
     }

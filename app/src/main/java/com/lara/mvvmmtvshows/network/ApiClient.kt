@@ -12,7 +12,7 @@ private val retrofit = Retrofit.Builder()
 
 object ApiClient {
 
-    val apiService : ApiService by lazy {
+    val apiService: ApiService by lazy {
         retrofit.create(ApiService::class.java)
     }
 

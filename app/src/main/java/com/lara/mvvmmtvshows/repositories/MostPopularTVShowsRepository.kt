@@ -9,12 +9,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class MostPopularTVShowsRepository {
 
-    fun getMostPopularTVShows(page: Int) : LiveData<TVShowResponse> {
+    fun getMostPopularTVShows(page: Int): LiveData<TVShowResponse> {
         val data: MutableLiveData<TVShowResponse> = MutableLiveData()
-        ApiClient.apiService.getMostPopularTvShows(page).enqueue(object : Callback<TVShowResponse> {
+        ApiClient.apiService.getMostPopularTvShows(page).enqueue(object: Callback<TVShowResponse> {
             override fun onResponse(@NonNull call: Call<TVShowResponse>, @NonNull response: Response<TVShowResponse>) {
                 data.value = response.body()
             }

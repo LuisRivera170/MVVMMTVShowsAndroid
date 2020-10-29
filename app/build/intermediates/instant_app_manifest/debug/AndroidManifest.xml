@@ -22,6 +22,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.lara.mvvmmtvshows.activities.TvShowDetailsActivity" />
         <activity android:name="com.lara.mvvmmtvshows.activities.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
