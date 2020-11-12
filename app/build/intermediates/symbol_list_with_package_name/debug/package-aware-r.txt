@@ -2308,6 +2308,9 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_fading_edge
+drawable background_slider_indicator_active
+drawable background_slider_indicator_inactive
 drawable background_tv_show
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2565,6 +2568,7 @@ id labeled
 id largeLabel
 id layout
 id layoutHeader
+id layoutSliderIndicators
 id left
 id line1
 id line3
@@ -2673,6 +2677,7 @@ id showTitle
 id sin
 id skipCollapsed
 id slide
+id sliderViewPager
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -2752,6 +2757,7 @@ id unlabeled
 id up
 id useLogo
 id viewBackground
+id viewFadingEdge
 id viewSupporter
 id view_offset_helper
 id visible
@@ -2840,6 +2846,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dp_example
+layout item_container_slider_image
 layout item_container_tv_show
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

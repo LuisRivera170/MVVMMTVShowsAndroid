@@ -44,6 +44,10 @@
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/drawable/background_tv_show.xml"
     },
     {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable_background_slider_indicator_inactive.xml.flat",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/drawable/background_slider_indicator_inactive.xml"
+    },
+    {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/layout_activity_tv_show_details.xml.flat",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/activity_tv_show_details.xml"
     },
@@ -116,6 +120,10 @@
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/font/ubuntu_bold.ttf"
     },
     {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/layout_item_container_slider_image.xml.flat",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/item_container_slider_image.xml"
+    },
+    {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
@@ -126,6 +134,10 @@
     {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable_background_slider_indicator_active.xml.flat",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/drawable/background_slider_indicator_active.xml"
     },
     {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search.png.flat",
@@ -150,6 +162,10 @@
     {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_search.xml.flat",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_search.xml"
+    },
+    {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable_background_fading_edge.xml.flat",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/drawable/background_fading_edge.xml"
     },
     {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",

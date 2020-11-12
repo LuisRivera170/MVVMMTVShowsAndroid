@@ -4,6 +4,10 @@
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/activity_tv_show_details.xml"
     },
     {
+        "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_container_slider_image.xml",
+        "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/item_container_slider_image.xml"
+    },
+    {
         "merged": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
         "source": "/Users/macbook/AndroidStudioProjects/MVVMMTVShows/app/src/main/res/layout/activity_main.xml"
     },
