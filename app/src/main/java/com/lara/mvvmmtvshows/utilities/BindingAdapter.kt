@@ -8,7 +8,7 @@ import java.lang.Exception
 
 
 @BindingAdapter("android:imageURL")
-fun setImageUrl(imageView: ImageView, URL: String) {
+fun setImageUrl(imageView: ImageView, URL: String?) {
     imageView.alpha = 0f
     Picasso
         .get()

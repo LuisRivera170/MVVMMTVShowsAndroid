@@ -20,7 +20,7 @@ data class TVShowDetails(
     val rating: String,
 
     @SerializedName("genres")
-    val genres: Array<String>,
+    val genres: Array<String>?,
 
     @SerializedName("pictures")
     val pictures: Array<String>?,

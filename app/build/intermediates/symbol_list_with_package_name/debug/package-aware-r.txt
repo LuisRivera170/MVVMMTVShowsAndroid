@@ -2308,6 +2308,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_back_button
 drawable background_fading_edge
 drawable background_slider_indicator_active
 drawable background_slider_indicator_inactive
@@ -2326,6 +2327,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_back
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -2333,6 +2335,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search
+drawable ic_star
 drawable ic_watchlist
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2456,7 +2459,9 @@ id beginning
 id blocking
 id bottom
 id bounce
+id buttonEpisodes
 id buttonPanel
+id buttonWebsite
 id cache_measures
 id cancel_button
 id center
@@ -2555,6 +2560,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageBack
 id imageSearch
 id imageTVShow
 id imageWatchlist
@@ -2568,6 +2574,7 @@ id labeled
 id largeLabel
 id layout
 id layoutHeader
+id layoutMisc
 id layoutSliderIndicators
 id left
 id line1
@@ -2717,9 +2724,15 @@ id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
 id text2
+id textDescription
 id textEnd
+id textGenre
 id textName
 id textNetwork
+id textNetworkCountry
+id textRating
+id textReadMore
+id textRuntime
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2757,6 +2770,8 @@ id unlabeled
 id up
 id useLogo
 id viewBackground
+id viewDivider
+id viewDivider2
 id viewFadingEdge
 id viewSupporter
 id view_offset_helper
@@ -2942,6 +2957,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string define_roundedimageview
+string episodes
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3000,9 +3016,13 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string read_less
+string read_more
 string search_menu_title
 string status_bar_notification_info_overflow
 string tv_shows_most_popular
+string u2022
+string website
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
